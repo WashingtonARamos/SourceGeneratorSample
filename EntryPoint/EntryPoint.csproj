@@ -14,4 +14,16 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MySourceGenerator\MySourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="SqlScripts\MSSQL\ProductRepository\GetProductById.sql" />
+      <AdditionalFiles Include="SqlScripts\MSSQL\ProductRepository\GetProducts.sql" />
+      <AdditionalFiles Include="SqlScripts\Oracle\ProductRepository\GetProductById.sql" />
+      <AdditionalFiles Include="SqlScripts\Oracle\ProductRepository\GetProducts.sql" />
+      <AdditionalFiles Include="SqlScripts\MSSQL\UserRepository\GetUsers.sql" />
+    </ItemGroup>
+
 </Project>

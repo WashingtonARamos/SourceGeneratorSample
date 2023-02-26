@@ -1,3 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using ProductRepositoryScripts = SqlGeneratedCode.SqlScripts.Oracle.ProductRepository;
 
-Console.WriteLine("Hello, World!");
+var myQuery = ProductRepositoryScripts.GetProductById;
+
+// Prints "SELECT * FROM TABLE_PRODUCTS WHERE Id = @Id;"
+Console.WriteLine(myQuery);

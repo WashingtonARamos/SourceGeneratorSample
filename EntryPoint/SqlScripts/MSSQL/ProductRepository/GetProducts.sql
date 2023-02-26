@@ -1,0 +1,2 @@
+﻿SELECT *
+FROM TB_PRODUCTS;
